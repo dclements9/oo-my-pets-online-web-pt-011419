@@ -10,7 +10,6 @@ class Owner
     @pets = {fishes: [], dogs: [], cats: []}
     @@all << self
   end
-    #Class Methods
   def self.all
     @@all
   end
@@ -20,7 +19,6 @@ class Owner
   def self.reset_all
     self.all.clear
   end
-  ## Instance Methods
   def say_species
     "I am a #{@species}."
   end
